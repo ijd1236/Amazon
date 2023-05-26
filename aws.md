@@ -66,6 +66,8 @@
 
 ## PuTTY에서 앱 대시보드 만들기
 
+- PuTTY는 SSH의 기능을 수행하는 프로그램
+
 - conda create -n app_dash python=3.9 openssl numpy scipy matplotlib ipython scikit-learn pandas pillow jupyter seaborn 로 가상환경 설정, 라이브러리를 받는다.
 
 ![image](https://github.com/ijd1236/Amazon/assets/130967884/5bdf6c86-a4ec-4fb4-a252-d458d064a6ed)
