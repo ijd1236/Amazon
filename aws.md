@@ -137,6 +137,19 @@
 
 ![20230526_103954](https://github.com/ijd1236/Amazon/assets/130967884/37983d50-c648-4aa9-9839-f974a1d6998e)
 
+- 이제 nohup streamlit run app.py & = nohup(꺼도 서버 지속) streamlit run app.py &(빽그라운드에서 돌아라)
+- 를 사용하여 백그라운드에서 앱이 돌아가게 할 수 있습니다.
+- 백그라운드에서 돌아가는 앱을 종료하려면  먼저
+-  pgrep -f "streamlit run app.py" 나 ps -ef | grep streamlit 를 입력해 id를 확인하후
+-  kill 아이디 를 입력해 종료할 수 있습니다.
+
+## vs 코드에서 변경후 배포
+- vs코드에서 설정을 변경 후 (제대로 작동되는지 실행해봐야합니다.) 변경 내용을 커밋 & 푸시 한 이후
+- 그 이후 PuTTy에서 git pull 를 입력해 깃허브에서 수정한 내용을 반영합니다.
+- cat 파일이름.py 로 파일 내용을 확인할 수 있습니다.
+- 
+
+
 
 
 
