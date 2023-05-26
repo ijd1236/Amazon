@@ -77,14 +77,57 @@
 - plotly 설치 = pip install plotly ==5.14.1
 - joblib 설치 = pip install joblib==1.2.0
 
+
 ### 깃허브에서 소스파일을 가져오기 (Clone)
 
 - 리눅스에 Git 설치 = sudo yum install git
 - 만약 yum update 관련 오류가 났을때는, sudo yum update 실행하고 sudo yum upgrade 실행 후 다시 git 설치
 
 #### AWS EC2 에서 보안(방화벽) 항목에서 포트 허용해주기
+![20230526_172757](https://github.com/ijd1236/Amazon/assets/130967884/ecd343b7-9221-4ade-8158-91107aec4ffd)
 
-- 
+#### 작업전 clone할 폴더 생성하기
+
+- mkdir.Github를 입력하여 clone할 Github라는 이름의 폴더를 생성해줍니다
+
+#### Github폴더 내에서 깃허브 닷컴의 HTTPS 를 이용해서 clone 하기
+
+- git clone '깃허브 레파지토리 https 주소'
+
+![image](https://github.com/ijd1236/Amazon/assets/130967884/48c12806-88f8-4bc6-aa24-e297d164f55e)
+
+- git clone https://github.com/ijd1236/car_price_dash_board.git 
+
+- 기존에 연동되어있지 않은 경우 아이디와 패스워드를 입력해야합니다.
+- 아이디는 그대로 입력하면되고
+- 패스워드는 토큰을 만들어 입력합니다
+##### 깃허브 토큰 생성방법
+![20230526_102418](https://github.com/ijd1236/Amazon/assets/130967884/b2dc063e-0476-4171-9faa-583ce5112482)
+
+![20230526_102449](https://github.com/ijd1236/Amazon/assets/130967884/6b708e2b-412a-4cc1-8cc7-16887fe7b2d1)
+
+![20230526_102502](https://github.com/ijd1236/Amazon/assets/130967884/93c28c65-8999-4d53-9bc1-7f9088fe3e48)
+
+![20230526_102540](https://github.com/ijd1236/Amazon/assets/130967884/01debfe8-3333-4941-b34f-d00fbeeb9a54)
+
+
+![20230526_102557](https://github.com/ijd1236/Amazon/assets/130967884/63433f07-c194-4421-8b0c-3aaf920355b6)
+
+
+![20230526_102557](https://github.com/ijd1236/Amazon/assets/130967884/5a7ba79a-fa44-41a0-b369-078032e68e82)
+
+
+- 이제 깃허브 clone 이 완료되어 PuTTY에서 깃허브 파일을 사용하여 앱 대시보드 실행이 가능해졌습니다.
+
+![image](https://github.com/ijd1236/Amazon/assets/130967884/9413cf9d-f250-41ab-bd3f-742b15359e3e)
+
+- http://3.36.131.111:8502 를 주소창에 입력하면 대시보드에 들어갈 수 있습니다.
+- 여기서 3.36.131.111은 퍼블릭 ip 주소에 해당하고 8502는 포트번호에 해당합니다.
+
+### 클론 디렉토리로 이동해서 단순 터미널에서 실행하기
+- streamlit run app.py 로 앱대시보드를 실행했을 때
+- 터미널을 끄면 앱도 꺼지는 문제점이 존재합니다.
+- 터미널을 종료하더라도 계속해서 앱이 유지 되도록 하겠습니다.
 
 
 
