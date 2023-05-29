@@ -147,7 +147,52 @@
 - vs코드에서 설정을 변경 후 (제대로 작동되는지 실행해봐야합니다.) 변경 내용을 커밋 & 푸시 한 이후
 - 그 이후 PuTTy에서 git pull 를 입력해 깃허브에서 수정한 내용을 반영합니다.
 - cat 파일이름.py 로 파일 내용을 확인할 수 있습니다.
-- 
+
+## 깃허브를 이용한 Agile(애자일) 개발 방식 사용
+
+- Agile 방식이란 신속한 반복 작업을 통해 실제 작동 가능한 소프트웨어를 개발하여 지속적으로 제공하기 위한 소프트웨어 개발 방식을 말합니다.
+-  여기선 깃허브에 변경한 내용을 AWS 서버에 바로 적용할 수 있게 만듭니다.
+-  
+![20230526_124229](https://github.com/ijd1236/Amazon/assets/130967884/ab64a7a3-1807-425d-beb4-421ea2380d51)
+
+
+![20230526_124638](https://github.com/ijd1236/Amazon/assets/130967884/17dd7e50-60d4-4f12-ab2d-cdba69009e5f)
+
+- 깃허브에서 작업하는 레파지토리 선택후 세팅 - > 액션즈에 들어갑니다.
+
+![20230526_124741](https://github.com/ijd1236/Amazon/assets/130967884/f832d19b-6d67-4496-831f-cc5b8a497a33)
+
+- 동작할 암호를 설정합니다.
+![20230526_124856](https://github.com/ijd1236/Amazon/assets/130967884/51195763-8c47-4a2d-8a4c-666aabf023d3)
+
+- 먼저 이전에 받았던 pem 파일을 연후 그 내용을 입력하고 규칙을 만듭니다.
+
+![20230526_125702](https://github.com/ijd1236/Amazon/assets/130967884/8466540f-c624-4f4d-8cc9-5f4e278a8632)
+
+- 유저의 네임 (서버이름)을 추가합니다.
+
+![20230526_125754](https://github.com/ijd1236/Amazon/assets/130967884/f8c94f97-af33-4763-a4f3-001b1f7f9a97)
+
+- AWS ec2의 ip 주소를 입력하고 추가합니다.
+ 
+![20230526_125840](https://github.com/ijd1236/Amazon/assets/130967884/9b82e9c1-ad3c-48c1-ada3-c61b75e5d8f1)
+
+- 규칙을 만든 후 액션즈에서 workflow 를 설정합니다.
+
+### 세팅 코드
+
+![20230526_131541](https://github.com/ijd1236/Amazon/assets/130967884/9f6c19e9-61cd-4d62-a2f6-cb32525847bc)
+
+- 깃허브 레파지토리가 프라이빗으로 만들어져 있을때. 
+- 시크릿을 아이디와 (GIT_USER) 토큰 내용으로(GIT_PASSWORD) 두개 만든다
+- git pull https://${{ secrets.GIT_USER }}:${{ secrets.GIT_PASSWORD }}@github.com/ijd1236/car_price_dash_board.git  <- @ 뒤는 깃허브 주소
+
+
+이것으로 기본적인 AWS 환경 설정이 완료되었습니다.
+
+
+
+
 
 
 
