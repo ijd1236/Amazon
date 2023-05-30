@@ -90,17 +90,31 @@
 
 - mkdir.Github를 입력하여 clone할 Github라는 이름의 폴더를 생성해줍니다
 
-#### Github폴더 내에서 깃허브 닷컴의 HTTPS 를 이용해서 clone 하기
+#### 리눅스 Github폴더 내에서 깃허브 닷컴의 HTTPS 를 이용해서 clone 하기
 
-- git clone '깃허브 레파지토리 https 주소'
+- 먼저 가상환경에서 sudo yum install git 을 입력하여 리눅스내에서 git을 다운 받습니다.
+
+![20230530_153514](https://github.com/ijd1236/Amazon/assets/130967884/36bce0d8-7d8a-433f-896a-3612641b1725)
+
+
+
+- git clone '깃허브 레파지토리 https 주소'를 복사후 
 
 ![image](https://github.com/ijd1236/Amazon/assets/130967884/48c12806-88f8-4bc6-aa24-e297d164f55e)
 
-- git clone https://github.com/ijd1236/car_price_dash_board.git 
+- 리눅스 가상환경(Gith 폴더내)에서 'it clone 복사한 주소' 입력합니다
 
-- 기존에 연동되어있지 않은 경우 아이디와 패스워드를 입력해야합니다.
-- 아이디는 그대로 입력하면되고
-- 패스워드는 토큰을 만들어 입력합니다
+![20230530_153654](https://github.com/ijd1236/Amazon/assets/130967884/e89a7d56-5f40-4103-8704-85eae03ed947)
+
+![20230530_153805](https://github.com/ijd1236/Amazon/assets/130967884/f2013c9f-8b28-47a4-ab11-bd50bc26bfcf)
+
+- clone 완료후'll' 입력하여 설치가 제대로됐는지 확인합니다.
+
+- clone할 레파지토리가 퍼블릭이 아닐 경우 아이디와 패스워드를 입력해야합니다.
+
+- 아이디는 깃허브 아이디를 그대로 입력하면되고
+- 패스워드는 토큰을 만들어 입력합니다.
+- 
 ##### 깃허브 토큰 생성방법
 ![20230526_102418](https://github.com/ijd1236/Amazon/assets/130967884/b2dc063e-0476-4171-9faa-583ce5112482)
 
@@ -115,6 +129,7 @@
 
 
 ![20230526_102557](https://github.com/ijd1236/Amazon/assets/130967884/5a7ba79a-fa44-41a0-b369-078032e68e82)
+
 
 
 - 이제 깃허브 clone 이 완료되어 PuTTY에서 깃허브 파일을 사용하여 앱 대시보드 실행이 가능해졌습니다.
